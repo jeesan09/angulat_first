@@ -1,0 +1,13 @@
+<hr [style.border]="'1.3px dotted black'">
+
+<p  [style.text-align]="'center'">
+  two-way-data-binding works!
+</p>
+
+<h2 [ngStyle]="cssob" >Two Way Binding component</h2>
+<div [style.text-align]="'center'">
+	<input [style.text-align]="'center'" [(ngModel)]=input  type="text" name="">
+	{{input}}	
+
+</div>
+

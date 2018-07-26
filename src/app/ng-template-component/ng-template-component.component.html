@@ -1,0 +1,24 @@
+<hr [style.border]="'1.3px dotted black'">
+
+<p [style.text-align]="'center'">
+  ng-Template-component works!
+</p>
+
+<div *ngIf="toggle; then thenBlock ; else elsenBlock;">
+	
+</div>
+
+<ng-template #thenBlock>
+<h2 [ngStyle]="classBindingstyle">ng-Template-component (if else) </h2>
+</ng-template>
+<ng-template #elsenBlock>
+
+</ng-template>
+
+
+<div [style.text-align]="'center'">
+	
+    <button id="toggle_btn" [style.text-align]="'center'" (click)="hideshow()" >Hide</button>
+
+
+</div>

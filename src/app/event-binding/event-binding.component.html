@@ -1,0 +1,14 @@
+<hr [style.border]="'1.3px dotted black'">
+
+
+<p [style.text-align]="'center'">
+  event-binding works!
+</p>
+<h2   [ngStyle]="cssob" id="colorChange"  [style.background-color]="colortoggeler ? '#f6b2ff':'#bdfcdb'">Event Binding component</h2>
+
+<div [style.text-align]="'center'">
+	
+    <button [style.text-align]="'center'" (click)="changeColour()" >Toggle Text</button>
+
+
+</div>

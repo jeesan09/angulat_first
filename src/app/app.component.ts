@@ -13,6 +13,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Jeesan ';
+  public dataMain="(Data From App Component)";
+  public messege="";
+
+
   public styleBinding="center";
 
   public rooth2={

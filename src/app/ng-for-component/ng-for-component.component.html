@@ -1,0 +1,23 @@
+<hr [style.border]="'1.3px dotted black'">
+
+<p style="text-align: center;">
+
+
+  <b>ng-for-component </b>
+</p>
+
+<h2 [ngStyle]="rooth2" >  ng-for-component and Switch case   </h2>
+<hr [style.border]="'1.3px dotted black'">
+<div *ngFor="let htvar of tsvar; index as i" [ngSwitch]="htvar">
+
+     <div *ngSwitchCase="'red'">
+     	<h3 [style.color]="'red'" [style.text-align]="'center'">{{i}} <span style="margin-left: 10px;"></span> {{htvar}}</h3>
+     </div>
+	     <div *ngSwitchCase="'green'">
+     	<h3 [style.color]="'green'" [style.text-align]="'center'">{{i}} <span style="margin-left: 10px;"></span> {{htvar}}</h3>
+     </div>
+     <div *ngSwitchCase="'blue'">
+     	<h3 [style.color]="'blue'" [style.text-align]="'center'">{{i}} <span style="margin-left: 10px;"></span> {{htvar}}</h3>
+     </div>
+	
+</div>

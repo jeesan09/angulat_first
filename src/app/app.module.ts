@@ -8,6 +8,18 @@ import { InterpoletionComponent } from './interpoletion/interpoletion.component'
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { NGTemplateComponentComponent } from './ng-template-component/ng-template-component.component';
+import { NgForComponentComponent } from './ng-for-component/ng-for-component.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialExpentionComponent } from './material-expention/material-expention.component';
+
+
+import { MatButtonModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material';
+import { IntoractionWhinComponentsComponent } from './intoraction-whin-components/intoraction-whin-components.component';
+import { PipingComponent } from './piping/piping.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +28,20 @@ import { NGTemplateComponentComponent } from './ng-template-component/ng-templat
     InterpoletionComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    NGTemplateComponentComponent
+    NGTemplateComponentComponent,
+    NgForComponentComponent,
+    MaterialExpentionComponent,
+    IntoractionWhinComponentsComponent,
+    PipingComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+     MatButtonModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

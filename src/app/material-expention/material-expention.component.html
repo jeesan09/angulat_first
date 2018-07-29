@@ -1,0 +1,54 @@
+<div style="text-align: center;">
+	
+<hr [style.border]="'1.3px dotted black'">
+<p>
+  <b>material-expention Component</b> 
+</p>
+
+
+<hr [style.border]="'1.3px dotted black'">
+
+</div>
+
+
+<div style=" margin-top: 40px;  width: 50%; margin-left: 20%; text-align: center;">
+
+      <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{MypanelHeading}}1
+      </mat-panel-title>
+      <mat-panel-description>
+       {{panelDescription}}1
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+			<div *ngFor="let htvar of tsvar; index as i" >
+			       <p>{{htvar}}</p>
+
+			</div>       
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+  <mat-expansion-panel-header>
+     {{MypanelHeading}}2
+  </mat-expansion-panel-header>
+
+
+		<div *ngFor="let htvar of tsvar; index as i" >
+		       <p>{{htvar}}</p>
+
+		</div> 
+
+  <mat-action-row>
+ <ng-template matExpansionPanelContent>
+   
+    Some deferred content
+  </ng-template>  
+    <button mat-fab  style="width: 70px; height: 70px;">Click me</button>
+  </mat-action-row>
+</mat-expansion-panel>
+
+<hr [style.border]="'1.3px dotted black'">
+
+</div>

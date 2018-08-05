@@ -48,7 +48,7 @@ export class IntoractionWhinComponentsComponent implements OnInit {
     }
 
      else{
-             this.$AppcomponentData="";
+            
               this.chidEventEmitter.emit('');
               console.log("in else part"); 
 

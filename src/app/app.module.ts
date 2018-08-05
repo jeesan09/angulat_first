@@ -18,6 +18,10 @@ import { MatButtonModule } from '@angular/material';
 import { MatExpansionModule } from '@angular/material';
 import { IntoractionWhinComponentsComponent } from './intoraction-whin-components/intoraction-whin-components.component';
 import { PipingComponent } from './piping/piping.component';
+import { MyServiceService } from './my-service.service';
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
+import {HttpClientModule} from '@angular/common/http';
+import { HTTPcomponentComponent } from './httpcomponent/httpcomponent.component'
 
 
 
@@ -33,6 +37,8 @@ import { PipingComponent } from './piping/piping.component';
     MaterialExpentionComponent,
     IntoractionWhinComponentsComponent,
     PipingComponent,
+    ServiceDetailComponent,
+    HTTPcomponentComponent,
 
 
   ],
@@ -41,9 +47,10 @@ import { PipingComponent } from './piping/piping.component';
     FormsModule,
     BrowserAnimationsModule,
      MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MyServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

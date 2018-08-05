@@ -1,0 +1,18 @@
+<p [style.text-align]="'center'">
+ <b>(SERVICE - Myservice ) called From service-detail component</b>
+</p>
+
+<hr [style.border]="'1.3px dotted black'">
+
+<div >
+	
+		<div *ngFor="let htvar of Myservice; index as i"  [style.text-align]="'center'"  [style.background-color]="'#b5ffee'" [style.padding]="'5px'"[style.margin]="'5px'">
+
+		  <p>{{htvar.name}} {{htvar.age}} {{htvar.occupation}}</p>
+		<br>
+
+		</div>
+
+  
+
+</div>	
